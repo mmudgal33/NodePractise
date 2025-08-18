@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style type="text/css" media="screen">
+        body {
+            background-color: skyblue;
+            text-decoration-color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <%-include('common/header')%>
+    <h2>my channel name is: <%= emp.name %></h2>
+    <h2>my channel surname is: <%= emp.surname %></h2>
+    <h2>my channel age is: <%= emp.age %></h2>
+    <%-include('common/footer')%>
+</body>
+</html>

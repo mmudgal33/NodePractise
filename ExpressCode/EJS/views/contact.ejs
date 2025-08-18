@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style type="text/css" media="screen">
+        body {
+            background-color: skyblue;
+            text-decoration-color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <%-include('common/header')%>
+    
+    <h2>array first element is: <%= hobbies[0] %></h2>
+    <h2>array second element is: <%= hobbies[1] %></h2>
+    <h2>array third element is: <%= hobbies[2] %></h2>
+    <ul>
+        <% employee.hobbies.forEach((item)=> { %>
+            <li>
+                <%= item %>
+            </li>
+            <% }); %>
+    </ul>
+
+    <h3> for loop </h3>
+    <% for ( let i=1; i<=10; i++ ) { %>
+        <span>
+            <%= i %>
+        </span>
+
+        <% } %>
+
+    <h3> while loop </h3>
+            <% let j=1; while(j<=10){ %>
+                <span>
+                    <%= j %>
+                </span>
+                <% j++ %>
+                    <% } %>
+
+    <h3> if else loop </h3>
+        <% if(employee.name=='ali' ){ %>
+        <h4>hello <%= employee.name %></h4>
+                        <% }else{ %>
+                            <h4> you are not ali </h4>
+                            <% } %>   
+                            
+                            
+                            <%-include('common/footer')%>
+
+                                    
+
+
+</body>
+
+</html>
+
+
+
+
+

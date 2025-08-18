@@ -1,0 +1,13 @@
+{
+    "id":101,
+    "name":"john doe",
+    "isActive": true,
+    "hobbies":["reading","writing","swimming","songs"],
+    "address":{
+        "street":"123 main streer",
+        "city":"anytown",
+        "postcode":"12345"
+
+    },
+    "phone":null
+}
