@@ -13,6 +13,7 @@ mongoose.connect('mongodb://localhost:27017/ttchannel',
     .then(() => console.log('connected'))
     .catch((err) => console.log(err));
 
+    
 // schema
 // mongoose schema defines structure of document, default values, validations etc
 const playlistSchema = new mongoose.Schema({

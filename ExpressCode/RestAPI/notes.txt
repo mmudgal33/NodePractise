@@ -1,0 +1,21 @@
+// MongoParseError: option usecreateindex is not supported
+
+// MongoParseError usecreateindex
+// The MongoParseError: option usecreateindex is not supported error occurs when using Mongoose version 6 or later, as the useCreateIndex option is no longer supported.
+// Mongoose 6 always behaves as if useCreateIndex is true by default, making the option redundant.
+// The same applies to useNewUrlParser, useUnifiedTopology, and useFindAndModify, which are also no longer supported and are set to their default values automatically.
+// To resolve the error, simply remove the useCreateIndex option (and the others if present) from the connection configuration object when calling mongoose.connect().
+// For example, instead of using:
+
+// mongoose.connect('mongodb://localhost:27017/mydb', {
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false
+// });
+
+// you should use:
+
+// mongoose.connect('mongodb://localhost:27017/mydb');
+
+// This updated code will work correctly with Mongoose 6 and later versions.

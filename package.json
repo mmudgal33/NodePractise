@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node src/app.js",
+    "dev": "node --watch src/app.js"
   },
   "keywords": [],
   "author": "mohit mudgal",
@@ -13,6 +15,7 @@
     "bootstrap": "^5.3.7",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "mongoose": "^8.17.1"
+    "mongoose": "^8.17.1",
+    "validator": "^13.15.15"
   }
 }
